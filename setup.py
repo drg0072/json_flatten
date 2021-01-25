@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 # read the contents of your README file
 from os import path
@@ -8,8 +8,8 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='json_python_flatten',
-    py_modules=['json_flatten_python'],
-    version='0.1.1',
+    packages=find_packages(include=['json_python_flatten']),
+    version='0.1.3',
     description='Flatten JSON objects',
     long_description=long_description,
     long_description_content_type='text/markdown',
